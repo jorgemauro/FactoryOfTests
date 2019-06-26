@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 20s linear forwards;
   height: 80px;
 }
 
@@ -21,7 +21,17 @@
 .App-intro {
   font-size: large;
 }
-
+.tabAnimation{
+  animation: Uptab 500ms ease-in-out forwards;
+}
+@keyframes Uptab {
+  0%{
+  transform:translateY(0px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

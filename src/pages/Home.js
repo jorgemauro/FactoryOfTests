@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
-import Menu from "../components/Menu"
-class App extends Component {
+import React from 'react';
+import TabAnimadoMUI from '../components/TabAnimadoMUI';
+import {Tabs, Tab, AppBar, Grow} from '@material-ui/core';
+import {Phone,Favorite, PersonPin} from '@material-ui/icons';
+class Home extends React.Component {
     render() {
+
         return (
-            <Menu/>
+            <div style={{display:'flex', alignItems:'center', justifyContent:'center', width:'100vw',height:'100vh' }}>
+               <TabAnimadoMUI/>
+            </div>
         );
     }
 }
 
-export default App;
+export default Home;
